@@ -1,0 +1,31 @@
+body {
+    font-family: sans-serif;
+}
+
+h1 {
+    color: navy;
+}
+
+.bloque {
+    background: yellow;
+    color: red;
+}
+
+.linea {
+    background: greenyellow;
+}
+
+.img {
+    width: 50%;
+}
+
+.tabla,
+tr,
+th,
+td {
+    border: 1px solid black;
+}
+
+h2 {
+    color: orangered;
+}

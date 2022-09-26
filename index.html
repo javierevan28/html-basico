@@ -5,6 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--CSS-->
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- JS-->
+    <script src="app/script.js"></script>
     <!-- No rebasar 165 caracteres-->
     <!-- Cambiar siempre en cada una de las diferentes págs.-->
     <meta name="description" content="Aprendiendo html básico">
@@ -13,7 +17,75 @@
 </head>
 
 <body>
-    <h2>Aprendiendo HTML</h2>
+    <h1>Temario del curso</h1>
+    <ul>
+        <li><a href="#inicio">Encabezados</a></li>
+        <li>
+            <a href="#textos-basicos">Etiquetas de texto básicas
+            </a>
+        </li>
+        <li>
+            <a href="#textos-semanticos">Etiquetas de texto semánticas
+            </a>
+        </li>
+        <li>
+            <a href="#etiquetas-saltos">Etiquetas de saltos
+            </a>
+        </li>
+        <li>
+            <a href="#etiquetas-formateo">Etiquetas de formateo
+            </a>
+        </li>
+        <li>
+            <a href="#etiquetas-semanticas">Etiquetas semánticas estructurales
+            </a>
+        </li>
+        <li>
+            <a href="#bloque-linea">Etiquetas de bloque vs etiquetas de línea
+            </a>
+        </li>
+        <li>
+            <a href="#imagenes">imagenes</a>
+        </li>
+        <li>
+            <a href="#figuras">figuras</a>
+        </li>
+        <li>
+            <a href="#listas-ordenadas">Listas ordenadas</a>
+        </li>
+        <li>
+            <a href="#listas-desordenadas">Listas desordenadas</a>
+        </li>
+        <li>
+            <a href="#listas-definicion">Listas de definición</a>
+        </li>
+        <li>
+            <a href="#tablas">Tablas</a>
+        </li>
+        <li>
+            <a href="#enlaces">Enlaces</a>
+        </li>
+
+        <li>
+            <a href=""></a>
+        </li>
+        <li>
+            <a href=""></a>
+        </li>
+        <li>
+            <a href=""></a>
+        </li>
+        <li>
+            <a href=""></a>
+        </li>
+        <li>
+            <a href=""></a>
+        </li>
+        <li>
+            <a href=""></a>
+        </li>
+    </ul>
+    <h2 id="inicio">Aprendiendo HTML</h2>
     <!-- Esto es un comentario-->
     <p>Hola, escribiendo mi primer HTML</p>
     <p>Aprendiendo sobre diseño web</p>
@@ -24,7 +96,7 @@
     <h5>Encabezao de nivel 5</h5>
     <h6>Encabezao de nivel 6</h6>
     <hr>
-    <h2>Etiquetas de texto básicas</h2>
+    <h2 id="textos-basicos">Etiquetas de texto básicas</h2>
     <!--Párrafo-->
     <p>Un párrafo</p>
     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia possimus quae inventore blanditiis id deleniti hic architecto maiores cupiditate voluptatum, assumenda porro quidem provident non voluptates placeat fugiat aliquam labore!</p>
@@ -32,19 +104,19 @@
         Palabras en: <b>nregita</b>, <i>itálica</i>, <u>subrayado</u>,e=mc<sup>2</sup>, H<sub>2</sub>O, <mark>marca de texto</mark>, <small>letras pequeñas</small>
     </p>
     <hr>
-    <h2>Etiquetas de texto semánticas</h2>
+    <h2 id="textos-semanticos">Etiquetas de texto semánticas</h2>
     <!--Etiquetas de texto semánticas-->
     <strong>Este texto es importante</strong>. <em>Este texto hace énfasis</em>
     <blockquote>Yo sólo se que no se nada</blockquote>
     <cite>Sócartes</cite>
     <hr>
-    <h2>Etiquetas de saltos</h2>
+    <h2 id="etiquetas-saltos">Etiquetas de saltos</h2>
     <!--Etiquetas de salto-->
     Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br> Numquam voluptate nam odio minima eius temporibus officia nihil. <br> At quidem sapiente doloribus officiis, voluptas nihil earum quam eos pariatur ipsa id!
     <!-- Salto semántico-->
     <!-- <hr>línea de color salto semántico -->
     <hr>
-    <h2>Etiquetas de formateo</h2>
+    <h2 id="etiquetas-formateo">Etiquetas de formateo</h2>
     <p>
         <pre>
             Tareas por hacer:
@@ -70,7 +142,7 @@
         </code>
     </pre>
     <hr>
-    <h2>Etiquetas semánticas estructurales</h2>
+    <h2 id="etiquetas-semanticas">Etiquetas semánticas estructurales</h2>
     <div> div - es una etiqueta contenedora que no tiene semántica</div>
     <header> header - Cabecera de un sitio web o de una sección</header>
     <main>
@@ -84,6 +156,174 @@
     <section>section - Representa una seccion de contenido genérico</section>
     <address>address - Representa una información de contacto</address>
     <hr>
+    <!-- Etiquetas de bloques vs etiquetas de línea-->
+    <h2 id="bloque-linea">Etiquetas de bloque vs etiquetas de línea</h2>
+    <div class="bloque">
+        La etiqueta de bloque por excelencia es el div, una etiqueta de bloque es aquella que genera saltos de línea con sus etiquetas hermanas
+    </div>
+    <span class="linea">
+        la etiqueta de línea por excelncia es el span, una etiqueta de línea
+        sólo ocupa el espacio necesario que tiene su contenido
+    </span>
+    <span>
+        Soy otro span
+    </span>
+    <hr>
+    <h2 id="imagenes">Imágenes</h2>
+    <img class="img" src="img/periodic-table-of-html-elements.png" alt="Tabla periódica de lo elementos html">
+    <img class="img" src="img/puesta-sol.jpg" alt="Puesta de sol y Kenai">
+    <img class="img" src="img/this-is-fine.gif" alt="meme del perro this is fine">
+    <img class="img" src="img/kEnAi.svg" alt="Kenai">
+    <hr>
+    <h2 id="figuras">Figuras</h2>
+    <figure>
+        <img class="img" src="img/periodic-table-of-html-elements.png" alt="Tabla de los elementos HTML">
+        <figcaption>Tabla de los elementos HTML</figcaption>
+    </figure>
+    <hr>
+    <h2 id="listas-ordenadas">Listas ordenadas</h2>
+    <h3>Estaciones del año</h3>
+    <ol>
+        <li>Primavera</li>
+        <li>Verano</li>
+        <li>Otoño</li>
+        <li>Invierno</li>
+    </ol>
+    <!-- comienza con el indice X -->
+    <ol start="3">
+        <li>Primavera</li>
+        <li>Verano</li>
+        <li>Otoño</li>
+        <li>Invierno</li>
+    </ol>
+    <!-- COmienza con el último número -->
+    <ol reversed>
+        <li>Primavera</li>
+        <li>Verano</li>
+        <li>Otoño</li>
+        <li>Invierno</li>
+    </ol>
+    <!-- Cambiar a número romano o letra-->
+    <ol type="I">
+        <li>Primavera</li>
+        <li>Verano</li>
+        <li>Otoño</li>
+        <li>Invierno</li>
+    </ol>
+    <hr>
+    <h2 id="listas-desordenadas">Listas desordenadas</h2>
+    <h3>Cosas por hacer</h3>
+    <ul>
+        <li>Terminar de grabar los fragmentos del curos HTML</li>
+        <li>Editar el video final</li>
+        <li>Subirlo a youtube</li>
+    </ul>
+    <ul type="circle">
+        <li>Terminar de grabar los fragmentos del curos HTML</li>
+        <li>Editar el video final</li>
+        <li>Subirlo a youtube</li>
+    </ul>
+    <ul type="square">
+        <li>Terminar de grabar los fragmentos del curos HTML</li>
+        <li>Editar el video final</li>
+        <li>Subirlo a youtube</li>
+    </ul>
+    <hr>
+    <h2 id="listas-definicion">Listas de definición</h2>
+    <dl>
+        <dt>HTML</dt>
+        <dd>Es un lenguaje de marcado que define el contenido de la web</dd>
+        <dt>CSS</dt>
+        <dd>Es un lenguaje de definicion que da estilos HTML</dd>
+        <dt>JAVASCRIPT</dt>
+        <dd>Es el lenguaje de la web</dd>
+    </dl>
+    <hr>
+    <h2 id="tablas">Tablas</h2>
+    <table class="tabla">
+        <tr>
+            <th>Nombre</th>
+            <th>Constelación</th>
+            <th>Tipo</th>
+        </tr>
+        <tr>
+            <td>Ikki</td>
+            <td>Fénix</td>
+            <td>Bronce</td>
+        </tr>
+        <tr>
+            <td>Shaina</td>
+            <td>Ofiuco</td>
+            <td>Plata</td>
+        </tr>
+        <tr>
+            <td>Saga</td>
+            <td>Géminis</td>
+            <td>Dorado</td>
+        </tr>
+    </table>
+    <br>
+    <table class="tabla">
+        <thead>
+            <tr>
+                <th colspan="3">Tabal de los Santos de Athenea</th>
+            </tr>
+
+            <tr>
+                <th>Nombre</th>
+                <th>Constelación</th>
+                <th>Tipo</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Iki</td>
+                <td>Fénix</td>
+                <td>Plata</td>
+            </tr>
+            <tr>
+                <td>Mistry</td>
+                <td>Lagarto</td>
+                <td>Plata</td>
+            </tr>
+            <tr>
+                <td>Saga</td>
+                <td>Géminis</td>
+                <td>Dorado</td>
+            </tr>
+            <tr>
+                <td>Shaina</td>
+                <td rowspan="2">Ofiuco</td>
+                <td>Plata</td>
+            </tr>
+            <tr>
+                <td>Odiseo</td>
+                <td>Dorado</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th colspan="3">Saint Seiya fue creado por Masami Kurumada</th>
+            </tr>
+        </tfoot>
+    </table>
+    <hr>
+    <h2 id="enlaces">Enlaces</h2>
+    <a href="https://www.google.com" target="_blank" rel="nofollow">Ir a google</a>
+    <br><br><br>
+    <a href="https://www.youtube.com/?gl=MX&hl=es" target="_blank">
+        <img class="img" src="img/kEnAi.svg" alt="ir hacia los cursos">
+    </a>
+    <hr>
+    <h2>Enlaces internos</h2>
+    <a href="#inicio">Inicio</a>
+    <hr>
+    <h2>Correo etiqueta a</h2>
+    <a href="mailto:jomaevan13@gmail.com">Enlace a correo electronico</a><br>
+    <a href="tel:7772517476">Enlace a teléfono</a><br>
+    <a href="https://api.whatsapp.com/send?phone777217476&text=Hola">Whatsapp</a>
+    <hr>
+    <h2>Enlaces internos</h2>
 </body>
 
 </html>
